@@ -1,0 +1,28 @@
+.header__lang-link {
+  margin: 0 0 6px;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity .1s linear;
+}
+
+.header__lang-link:first-of-type {
+  margin-right: 18px;
+  border-bottom: 2px solid white;
+  margin-bottom: 4px;
+}
+
+.header__lang-link:hover {
+  opacity: .6;
+}
+
+@media all and (max-width: 768px) {
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

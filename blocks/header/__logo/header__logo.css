@@ -1,0 +1,7 @@
+.header__logo {
+  height: 100%;
+  justify-self: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

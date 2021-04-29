@@ -1,0 +1,23 @@
+.places__title {
+  grid-area: title;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 72px;
+  line-height: 106%;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .places__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .places__title {
+    margin: 0 auto;
+    width: 95%;
+  }
+}

@@ -1,0 +1,31 @@
+.cover__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cover__item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,1);
+  opacity: 0.5;
+  z-index: -1;
+  transition: opacity 200ms ease-in-out;
+}
+
+.cover__item:hover:before {
+  opacity: 0.8;
+}
