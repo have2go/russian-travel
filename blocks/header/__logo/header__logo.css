@@ -1,7 +1,9 @@
 .header__logo {
-  height: 100%;
-  justify-self: center;
-  position: absolute;
-  left: 0;
-  top: 0;
+  height: 52px; /* ограничиваю строго, высота логотипа изменяется только на мобильных устройствах */
+}
+
+@media all and (max-width: 767px) {
+  .header__logo {
+    height: 42px;
+  }
 }

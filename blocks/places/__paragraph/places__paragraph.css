@@ -3,7 +3,7 @@
   font-weight: 400;
   color: white;
   font-size: 18px;
-  line-height: 163%;
+  line-height: 29px;
   margin: 0;
   grid-area: text;
 }
@@ -12,15 +12,16 @@
   padding-bottom: 25px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .places__paragraph {
     font-size: 16px;
+    line-height: 26px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .places__paragraph {
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
   }
 }

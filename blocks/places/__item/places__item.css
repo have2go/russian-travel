@@ -13,16 +13,16 @@
 }
 
 .places__item:last-of-type {
-  margin-bottom: 92px;
+  margin-bottom: 67px; /* 92px-25px (у последнего параграфа внутренний отступ 25px) */
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .places__item {
     grid-gap: 48px 32px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .places__item {
     grid-gap: 48px 28px;
   }
@@ -30,11 +30,20 @@
 
 @media screen and (max-width: 600px) {
   .places__item {
+    margin-top: 50px;
     grid-template-columns: 1fr;
     grid-template-areas: "title"
                          "link"
                          "image"
                          "text";
 
+  }
+
+  .places__item:first-of-type {
+    margin-top: 64px;
+  }
+
+  .places__item:last-of-type {
+    margin-bottom: 41px; /* 66px-25px (у последнего параграфа внутренний отступ 25px) */
   }
 }
